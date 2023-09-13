@@ -1,11 +1,15 @@
-def quick_merge(n):
-    result = []
-    a = []
-    for i in range(n):
-        a = [int(c) for c in input().split()]
-        result = result + a
-        result.sort()
-    return (result)
-numbers1 = int(input())
-print(*(quick_merge(numbers1)))
-
+def is_prime(num):
+    c = 0
+    x = num
+    while num != 10000:
+        for i in range(1,num +1):
+            if num % i == 0:
+                c += 1
+        if c == 2 and x != num:
+            x = num
+            num = 10000
+            return(x)
+        c = 0
+        num += 1
+n = int(input())
+print(is_prime(n))
