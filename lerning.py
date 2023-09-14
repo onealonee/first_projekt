@@ -8,7 +8,7 @@ def is_password_good(password):
                 c += 1
             elif password[i].lower() == password[i]:
                 c += 1
-            #elif i
+            elif i
 
 # считываем данные
 txt = input()
