@@ -12,7 +12,6 @@ def is_password_good(password):
 
 # считываем данные
 txt = input()
-3123123
 # вызываем функцию
 print(is_password_good(txt))
 
